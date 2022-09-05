@@ -168,23 +168,31 @@ ul{
     margin-right: 10%;
 }
 .margem-baixo{
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 .centro{
     text-align: center;
 }
-
+.itensCentro{
+    float: center;
+    align-items: center;
+    padding-left: 30px;
+}
 /* Texto base */
 .texto{
     color: var(--white);
     text-align: justify;
     font-size: 1.3rem;
 }
-
+.textoPequeno{
+    color: var(--white);
+    text-align: justify;
+    font-size: 1rem;
+}
 /* imagem fundo mapa */
 
 .fundo-imagem{
-    background-image: url("images/FotosCEA.jpeg");
+    background-image: url("images/FotosCEA\ \(2\).jpeg");
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -208,4 +216,23 @@ ul{
 }
 .grid-item {
     text-align: center;
+}
+
+.responsiveBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding:20px;
+}
+.responsiveItem{
+    width: 250px;
+    height: 250px;
+}
+
+.responsiveItem a{
+    text-decoration: none;
+    color: var(--white);
 }
