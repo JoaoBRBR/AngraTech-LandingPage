@@ -246,3 +246,11 @@ ul{
     text-decoration: none;
     color: var(--white);
 }
+
+#qrcode{
+    width: 70%;
+    height: auto;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius:10%;
+}
