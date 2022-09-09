@@ -259,3 +259,19 @@ ul{
     padding: 10px;
     border-radius:10%;
 }
+
+/* responsividade de icones de logos e pessoas */
+
+.respBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding:20px;
+}
+.respItemLogo{
+    width: 250px;
+    height: 100px;
+}
