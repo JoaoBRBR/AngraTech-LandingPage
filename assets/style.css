@@ -232,6 +232,11 @@ ul{
     height: 250px;
 }
 
+.responsiveItemCode{
+    width: 250px;
+    height: 250px;
+}
+
 .responsiveItem3{
     width: 250px;
     height: 150px;
@@ -248,8 +253,8 @@ ul{
 }
 
 #qrcode{
-    width: 70%;
-    height: auto;
+    width: 90%;
+    height: 90%;
     background-color: #ffff;
     padding: 10px;
     border-radius:10%;
