@@ -275,3 +275,9 @@ ul{
     width: 250px;
     height: 100px;
 }
+
+.respItemIcon{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
