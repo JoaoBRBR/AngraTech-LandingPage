@@ -5,6 +5,7 @@ const fexaA = document.querySelector('.fexaA');
 const fexaB = document.querySelector('.fexaB');
 const fexaC = document.querySelector('.fexaC');
 const fexaD = document.querySelector('.fexaD');
+const fexaE = document.querySelector('.fexaE');
 
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
@@ -12,7 +13,7 @@ fexaA.addEventListener('click',close)
 fexaB.addEventListener('click',close)
 fexaC.addEventListener('click',close)
 fexaD.addEventListener('click',close)
-
+fexaE.addEventListener('click',close)
 
 
 

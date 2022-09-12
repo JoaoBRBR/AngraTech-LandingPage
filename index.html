@@ -8,28 +8,24 @@
     <title>Angra-Tech</title>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.css">
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header class="header">
-        <!-- Logo -->
-        <a href="#">
-            <img class="logo" src="assets/images/Angra TechNotWhite.png" alt="logo do evento">
-        </a>
-
-        <!-- Botão do menu -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-        <!-- Menu -->
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="#sobre">Sobre o Evento</a></li>
-                <li><a href="#palestra">Palestrantes</a></li>
-                <li><a href="#mapa">Local</a></li>
-                <li><a href="#inscricao">Inscrição</a></li>
-                <li><a href="#apoio">Patrocinadores</a></li>
+        <nav>
+            <div class="logo">
+                <img width="100%" height="100%" src="assets/images/Angra TechNotWhite.png" alt="">
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li class="fexaA"><a href="#sobre">Sobre o Evento</a></li>
+                <li class="fexaB"><a href="#palestra">Palestrantes</a></li>
+                <li class="fexaC"><a href="#mapa">Local</a></li>
+                <li class="fexaD"><a href="#inscricao">Inscrição</a></li>
+                <li class="fexaE"><a href="#apoio">Patrocinadores</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
     </header>
@@ -213,6 +209,7 @@
         </span>
     </div>
     <br>
+    <script src="app.js"></script>
 </body>
 
 </html>
