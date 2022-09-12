@@ -292,6 +292,13 @@ ul{
     margin-bottom:30px;
 }
 
+
+.respItemIcon p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
 .itemLeft{
     float: left;
     width: 40%;
