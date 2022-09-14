@@ -69,6 +69,7 @@ nav .mainMenu li a:hover{
 nav .openMenu{
     font-size: 2rem;
     margin: 20px;
+    margin-top: 30px;
     display: none;
     cursor: pointer;
 }
@@ -81,12 +82,12 @@ nav .openMenu, .closeMenu, .icons i{
 }
 
 nav .logo{
-    margin: 6px;
+    margin: 7px;
     margin-left: 20px;
     font-size: 25px;
     cursor: pointer;
     min-width:200px;
-    max-width:300px;
+    max-width:270px;
     display: flex;
 }
 
@@ -305,9 +306,9 @@ nav .logo{
 
 .contact-card {
     width: 80%;
-    max-width: 500px;
-    margin: 10PX;
-    padding: 30px;
+    max-width: 450px;
+    margin: 5px;
+    padding: 20px;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -347,33 +348,27 @@ nav .logo{
     margin-bottom: 10px;
 }
 
-.contact-card .card-text .btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    padding: 15px 30px;
-    border-radius: 5px;
-    background-color: #eb367b;
-    border: 2px solid transparent;
-}
-
-.contact-card .card-text .btn:hover {
-    background-color: #fff;
-    color: #eb367b;
-    border: 2px solid #eb367b;
-}
 
 
-
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 730px) {
     .contact-card {
         flex-direction: row;
     }
 
     .contact-card .card-image {
         margin-bottom: 0px;
-        padding-right: 20px;
+        
     }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.gray{
+    color: gray;
+}
+
+.fa{
+    color: gray !important;
 }
