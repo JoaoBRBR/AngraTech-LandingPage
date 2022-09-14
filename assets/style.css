@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --white: #ffffff;
     --black: #000000;
@@ -247,7 +251,7 @@ nav .logo{
 }
 
 
-.respItemIcon p{
+.itemRight p{
     text-align: justify;
     text-justify: inter-word;
 }
@@ -261,9 +265,24 @@ nav .logo{
 .itemRight{
     font-size:1rem;
     float: right;
+    padding: 0 15px;
     width: 60%;
 }
 
 #imgFooter{
     position: absolute;
+}
+
+.idHolder{ /* for holdind the id for scrolling above the main sections */
+    position: relative;
+    top: -70px;
+}
+.idHolderB{ /* for holdind the id for scrolling above the main sections */
+    position: relative;
+    top: -100px;
+}
+
+
+.fa{
+    color: black;
 }
