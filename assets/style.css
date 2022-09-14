@@ -42,6 +42,7 @@ ul{
 
 nav {
     background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px 6px rgb(162, 162, 162);
     color: black;
     display: flex;
     justify-content: space-between;
@@ -57,12 +58,12 @@ nav .mainMenu li a{
     padding: 15px;
     padding-top: 35px;
     text-decoration: none;
-    color: black;
+    color: rgb(118, 118, 118);
     font-size: 1.3rem;
 }
 
 nav .mainMenu li a:hover{
-    color: gray;
+    color: rgb(49, 49, 49);
 }
 
 nav .openMenu{
@@ -71,6 +72,7 @@ nav .openMenu{
     display: none;
     cursor: pointer;
 }
+
 
 nav .openMenu, .closeMenu, .icons i{
     font-size:2rem;
@@ -115,7 +117,7 @@ nav .logo{
     }
     nav .mainMenu li a:hover{
         background: none;
-        color: gray;
+        color: rgb(45, 45, 45);
         font-size: 1.6rem;
     }
 }
@@ -236,7 +238,7 @@ nav .logo{
     padding:20px;
 }
 .respItemLogo{
-    margin:4px;
+    margin:8px;
     width: 250px;
     height: 100px;
 }
@@ -279,10 +281,21 @@ nav .logo{
 }
 .idHolderB{ /* for holdind the id for scrolling above the main sections */
     position: relative;
-    top: -100px;
+    top: -120px;
 }
 
 
 .fa{
     color: black;
+}
+
+.gradient-text {
+    display: inline-block;
+    background-image: linear-gradient(45deg, #00afef, #2a55a3);
+    background-size:auto;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    -moz-text-fill-color: transparent;
 }
