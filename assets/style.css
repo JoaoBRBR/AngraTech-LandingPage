@@ -299,3 +299,81 @@ nav .logo{
     background-clip: text;
     -moz-text-fill-color: transparent;
 }
+
+
+/*//CARD RESPONSIVO//////////////////////////////////////////*/
+
+.contact-card {
+    width: 80%;
+    max-width: 500px;
+    margin: 10PX;
+    padding: 30px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card .card-image {
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.contact-card .card-image img {
+    width: 200px;
+    height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.contact-card .card-image h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.contact-card .card-image h5 {
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+
+/* ========= Card-text ============ */
+.contact-card .card-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-card .card-text .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #eb367b;
+    border: 2px solid transparent;
+}
+
+.contact-card .card-text .btn:hover {
+    background-color: #fff;
+    color: #eb367b;
+    border: 2px solid #eb367b;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+    .contact-card {
+        flex-direction: row;
+    }
+
+    .contact-card .card-image {
+        margin-bottom: 0px;
+        padding-right: 20px;
+    }
+}
