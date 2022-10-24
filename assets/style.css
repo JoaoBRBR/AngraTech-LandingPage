@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #85888C;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+.header{
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+nav {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px 6px rgb(162, 162, 162);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    padding-top: 35px;
+    text-decoration: none;
+    color: rgb(118, 118, 118);
+    font-size: 1.3rem;
+}
+
+nav .mainMenu li a:hover{
+    color: rgb(49, 49, 49);
+}
+
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    margin-top: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+
+nav .openMenu, .closeMenu, .icons i{
+    font-size:2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo{
+    margin: 7px;
+    margin-left: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    min-width:200px;
+    max-width:270px;
+    display: flex;
+}
+
+
+@media(max-width: 1088px){
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu{
+        display:block;
+    }
+    nav .mainMenu li a:hover{
+        background: none;
+        color: rgb(45, 45, 45);
+        font-size: 1.6rem;
+    }
+}
+
+/*////////////////////////// Margem //////////////////////////////*/
+.margem-lado{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.margem-baixo{
+    margin-bottom: 65px;
+}
+.centro{
+    text-align: center;
+}
+.itensCentro{
+    float: center;
+    align-items: center;
+    padding-left: 30px;
+}
+/* Texto base */
+.texto{
+    color: var(--black);
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.textoBranco{
+    color: var(--white);
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.textoPequeno{
+    color: var(--black);
+    text-align: justify;
+    font-size: 1rem;
+}
+/* imagem fundo mapa */
+
+.fundo-imagem{
+    background-image: url("images/SALE1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-container-logos {
+    display: grid;
+    grid-template-columns: auto;
+}
+.grid-container-patrocinadores {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.grid-container-patrocinadores .grid-item{
+    margin: 5%;
+}
+.grid-item {
+    text-align: center;
+}
+
+.responsiveBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding:20px;
+}
+.responsiveItem{
+    width: 250px;
+    height: 250px;
+}
+
+.responsiveItemCode{
+    width: 250px;
+    height: 250px;
+}
+
+.responsiveItem3{
+    width: 250px;
+    height: 150px;
+}
+
+.responsiveItem a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.branco{
+    text-decoration: none;
+    color: var(--black);
+}
+
+#qrcode{
+    width: 90%;
+    height: 90%;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius:10%;
+}
+
+/* responsividade de icones de logos e pessoas */
+
+.respBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding:20px;
+}
+.respItemLogo{
+    margin:8px;
+    width: 250px;
+    height: 100px;
+}
+
+.respItemIcon{
+    min-width: 250px;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom:30px;
+}
+
+
+.itemRight p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.itemLeft{
+    float: left;
+    width: 40%;
+}
+
+.itemRight{
+    font-size:1rem;
+    float: right;
+    padding: 0 15px;
+    width: 60%;
+}
+
+#imgFooter{
+    position: absolute;
+}
+
+.idHolder{ /* for holdind the id for scrolling above the main sections */
+    position: relative;
+    top: -70px;
+}
+.idHolderB{ /* for holdind the id for scrolling above the main sections */
+    position: relative;
+    top: -120px;
+}
+
+
+.fa{
+    color: black;
+}
+
+.gradient-text {
+    display: inline-block;
+    background-image: linear-gradient(45deg, #00afef, #2a55a3);
+    background-size:auto;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+
+/*//CARD RESPONSIVO//////////////////////////////////////////*/
+
+.contact-card {
+    width: 80%;
+    max-width: 450px;
+    margin: 5px;
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.margem-ladoP{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.respBoxP{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+@media screen and (max-width: 650px) {
+    .contact-card{
+        width: 100%;
+        padding:0px;
+    }
+}
+
+.contact-card .card-image {
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
+.contact-card .card-image img {
+    width: 200px;
+    height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.contact-card .card-image h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.contact-card .card-image h5 {
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+
+/* ========= Card-text ============ */
+.contact-card .card-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.gray{
+    color: gray;
+}
+
+.fa{
+    color: gray !important;
+}
