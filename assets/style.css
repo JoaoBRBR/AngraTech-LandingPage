@@ -240,6 +240,7 @@ nav .logo{
 }
 .respItemLogo{
     margin:8px;
+    margin-bottom: 40px;
     width: 250px;
     height: 100px;
 }
