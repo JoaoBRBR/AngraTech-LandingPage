@@ -309,6 +309,7 @@ nav .logo{
     width: 80%;
     max-width: 450px;
     margin: 5px;
+    margin-bottom: 40px;
     padding: 20px;
     text-align: justify;
     display: flex;
@@ -327,6 +328,36 @@ nav .logo{
     flex-flow: wrap;
     justify-content: space-evenly;
     padding:20px;
+}
+.separacao{
+    width: 1px;
+    height: 500px;
+    background-image: radial-gradient(#2a55a3,#ffffff);;
+}
+
+@media screen and (max-width: 1220px) {
+    .separacao{
+        display: none;
+    }
+}
+
+#s3{
+    display: none;
+}
+
+@media screen and (max-width: 1790px) {
+    #s3{
+        display: block;
+    }
+    #s2{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    #s3{
+        display: block;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -378,4 +409,11 @@ nav .logo{
 
 .fa{
     color: gray !important;
+}
+
+
+.tabela td{
+    padding: 3px;
+    text-align: center;
+    padding-bottom: 2em;
 }
